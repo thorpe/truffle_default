@@ -2,7 +2,7 @@ const ArrayStorageContract = artifacts.require('ArrayStorageContract')
 
 contract('ArrayStorageContract', () => {
 
-  it('---- SimpleStorageContract ids ----', async () => {
+  it('---- SimpleStorageContract add() ----', async () => {
     const arrayStorageContract = await ArrayStorageContract.deployed();
     await arrayStorageContract.add(10);
     const result = await arrayStorageContract.ids(0);

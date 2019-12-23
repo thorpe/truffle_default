@@ -1,7 +1,7 @@
 const SimpleStorageContract = artifacts.require('SimpleStorageContract')
 
 contract('SimpleStorageContract', () => {
-  it('---- SimpleStorageContract return get----', async () => {
+  it('---- SimpleStorageContract get() ----', async () => {
     const simpleStorageContract = await SimpleStorageContract.deployed();
     await simpleStorageContract.set('aaa');
 
